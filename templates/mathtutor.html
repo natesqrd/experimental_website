@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Math Tutor</title>
+    </head>
+    <body>
+    {% extends "template.html" %}
+    {% block content %}
+        <form method = "POST">
+            <p>Expression: <input type="text" name="expression"/></p>
+            <p> <input type="submit" value="Submit"/></p>
+        </form>
+        <output name="x" for="expression"></output>
+    {% endblock %}
+    </body>
+</html>
